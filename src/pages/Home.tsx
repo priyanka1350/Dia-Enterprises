@@ -48,7 +48,7 @@ export function Home() {
               <div className="flex flex-wrap items-center justify-start gap-4">
                 <a 
                   href="/#products"
-                  className="bg-brand-green hover:bg-brand-green-light text-white px-8 py-4 rounded-sm font-medium text-lg transition-colors shadow-lg flex items-center"
+                  className="bg-brand-green hover:bg-brand-green-light text-white px-6 py-3 md:px-8 md:py-4 rounded-sm font-medium text-base md:text-lg transition-colors shadow-lg flex items-center"
                 >
                   Explore Products
                   <ArrowRight className="ml-2" size={20} />

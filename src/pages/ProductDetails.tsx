@@ -32,10 +32,10 @@ export function ProductDetails() {
             <ArrowLeft size={20} className="mr-2" /> Back to Products
           </a>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden max-h-[85vh]">
-            <div className="flex flex-col md:flex-row h-full max-h-[85vh]">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden min-h-[60vh] md:min-h-[75vh]">
+            <div className="flex flex-col md:flex-row h-full">
               {/* Product Image */}
-              <div className="w-full md:w-1/2 relative bg-brand-beige/20 min-h-[30vh] md:min-h-0">
+              <div className="w-full md:w-1/2 relative bg-brand-beige/20 min-h-[40vh] md:min-h-[75vh]">
                 <img 
                   src={product.image} 
                   alt={product.name} 
@@ -91,7 +91,7 @@ export function ProductDetails() {
                     href={company.whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-brand-green hover:bg-brand-green-light text-white text-center px-5 py-2.5 rounded-sm font-medium text-base transition-colors shadow-md"
+                    className="flex-1 bg-brand-green hover:bg-brand-green-light text-white text-center px-4 py-2 md:px-5 md:py-2.5 rounded-sm font-medium text-sm md:text-base transition-colors shadow-md"
                   >
                     WhatsApp Us
                   </a>

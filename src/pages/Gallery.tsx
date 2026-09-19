@@ -9,6 +9,7 @@ const images = Object.values(imagesRecord);
 
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   return (
     <section id="gallery" className="bg-white py-12 md:py-20 scroll-mt-20">
@@ -24,7 +25,7 @@ export function Gallery() {
 
         {/* CSS Grid for Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {images.map((src, index) => (
+          {images.slice(0, visibleCount).map((src, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -46,6 +47,17 @@ export function Gallery() {
             </motion.div>
           ))}
         </div>
+
+        {visibleCount < images.length && (
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => setVisibleCount(images.length)}
+              className="bg-brand-green text-white hover:bg-brand-green-light px-6 py-2.5 md:px-8 md:py-3 rounded-full font-medium text-sm md:text-base transition-all shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1"
+            >
+              See More Images
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}

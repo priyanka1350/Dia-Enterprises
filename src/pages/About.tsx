@@ -33,7 +33,7 @@ export function About() {
           </div>
           
           <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <a href="/#products" className="inline-block bg-brand-green text-white hover:bg-brand-green-light px-6 py-3 rounded-full font-medium text-base transition-all shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1">
+            <a href="/#products" className="inline-block bg-brand-green text-white hover:bg-brand-green-light px-5 py-2.5 md:px-6 md:py-3 rounded-full font-medium text-sm md:text-base transition-all shadow-lg hover:shadow-brand-green/30 hover:-translate-y-1">
               Explore Our Materials
             </a>
           </div>

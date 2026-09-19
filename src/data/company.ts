@@ -8,7 +8,7 @@ export const company = {
   whatsapp: "+91 97418 01270",
   whatsappLink: "https://wa.me/+919741801270",
   email: "diaent2010@gmail.com",
-  website: "https://diaenterprises.com",
+  website: "https://diaenterprisesindia.com",
   address: {
     street: "1st Division, Main Road, Bommonakatte",
     city: "Bhadravathi",

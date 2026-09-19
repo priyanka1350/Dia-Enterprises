@@ -80,7 +80,7 @@ export const products: Product[] = [
   },
   {
     id: "p4",
-    slug: "200-gsm-silver",
+    slug: "200-gsm-duplex-circle",
     name: "200 GSM Duplex Circle",
     tagline: "Heavy-Duty Duplex Material",
     description: "200 GSM silver paper provides increased thickness and rigidity for applications requiring a more substantial paper plate material. Its silver finish combines functional performance with a clean and attractive appearance.",

@@ -28,35 +28,35 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-white shadow-md py-0' : `pt-6 md:pt-2 ${location.pathname === '/' ? 'pb-16 md:pb-24 bg-gradient-to-b from-white/70 via-white/30 to-transparent' : 'pb-4 md:pb-0 bg-transparent'}`
+        isScrolled ? 'bg-white shadow-md py-0' : `pt-6 lg:pt-2 ${location.pathname === '/' ? 'pb-16 lg:pb-24 bg-gradient-to-b from-white/70 via-white/30 to-transparent' : 'pb-4 lg:pb-0 bg-transparent'}`
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo Spacer & Container */}
-        <div className={`transition-all duration-500 ${isScrolled ? 'w-auto' : 'w-24 md:w-40'}`}>
+        <div className={`transition-all duration-500 ${isScrolled ? 'w-auto' : 'w-24 lg:w-32 xl:w-40'}`}>
           <a 
             href="/#home" 
             className={`flex flex-col z-50 group transition-all duration-500 ${
-              isScrolled ? 'relative' : 'absolute top-4 md:top-6 left-4 md:left-8'
+              isScrolled ? 'relative' : 'absolute top-4 lg:top-6 [@media(min-width:1024px)_and_(max-height:768px)]:top-2 left-4 lg:left-8'
             }`}
           >
             <img 
               src="/logo.png" 
               alt="Dia Enterprise Logo" 
               className={`object-contain transition-all duration-500 origin-top-left ${
-                isScrolled ? 'h-12 md:h-16' : 'h-24 md:h-40'
+                isScrolled ? 'h-10 md:h-12 lg:h-16' : 'h-20 md:h-24 lg:h-32 xl:h-40 [@media(min-width:1024px)_and_(max-height:768px)]:h-24'
               }`}
             />
           </a>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+        <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.path}
-              className={`text-sm font-medium transition-colors hover:text-brand-green ${
+              className={`text-sm xl:text-base font-medium transition-colors hover:text-brand-green ${
                 location.hash === link.path.replace('/', '') ? 'text-brand-green font-semibold' : 'text-black'
               }`}
             >
@@ -74,7 +74,7 @@ export function Header() {
             </a> */}
             <a
               href="/#contact"
-              className="bg-brand-green hover:bg-brand-green-light text-white px-5 py-2.5 rounded-sm font-medium text-sm transition-colors shadow-sm"
+              className="bg-brand-green hover:bg-brand-green-light text-white px-4 py-2 md:px-5 md:py-2.5 rounded-sm font-medium text-xs md:text-sm transition-colors shadow-sm"
             >
               Contact
             </a>
@@ -83,7 +83,7 @@ export function Header() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden z-50 p-2 text-brand-charcoal"
+          className="lg:hidden z-50 p-2 text-brand-charcoal"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -94,7 +94,7 @@ export function Header() {
       {/* Mobile Nav Overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/40 z-30 md:hidden backdrop-blur-sm"
+          className="fixed inset-0 bg-black/40 z-30 lg:hidden backdrop-blur-sm"
           onClick={() => setMobileMenuOpen(false)}
         />
       )}
@@ -103,7 +103,7 @@ export function Header() {
       <div
         className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-40 shadow-2xl transition-transform duration-300 ease-in-out transform ${
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden flex flex-col`}
+        } lg:hidden flex flex-col`}
       >
         {/* Panel Header */}
         <div className="bg-brand-green px-6 pt-10 pb-6">

@@ -17,7 +17,7 @@ export function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             to="/"
-            className="bg-brand-green hover:bg-brand-green-light text-white px-8 py-3 rounded-sm font-medium transition-colors text-center"
+            className="bg-brand-green hover:bg-brand-green-light text-white px-6 py-2.5 md:px-8 md:py-3 rounded-sm font-medium text-sm md:text-base transition-colors text-center"
           >
             Back to Home
           </Link>

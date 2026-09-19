@@ -113,7 +113,7 @@ export function Contact() {
                 <textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-brand-green/50 focus:border-brand-green bg-gray-50 resize-none"></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-brand-green hover:bg-brand-green-light text-white py-4 rounded-sm font-medium text-lg transition-colors flex items-center justify-center">
+              <button type="submit" className="w-full bg-brand-green hover:bg-brand-green-light text-white py-3 md:py-4 rounded-sm font-medium text-base md:text-lg transition-colors flex items-center justify-center">
                 <Send size={20} className="mr-2" />
                 Send Enquiry
               </button>
