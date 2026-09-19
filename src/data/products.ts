@@ -34,7 +34,7 @@ export const products: Product[] = [
       gsm: "80 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-1.jpeg",
+    image: "/plate-1.jpeg",
     featured: true,
     available: true
   },
@@ -54,7 +54,7 @@ export const products: Product[] = [
       gsm: "120 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-2.jpeg",
+    image: "/plate-2.jpeg",
     featured: true,
     available: true
   },
@@ -74,7 +74,7 @@ export const products: Product[] = [
       gsm: "180 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-3.jpeg",
+    image: "/plate-3.jpeg",
     featured: true,
     available: true
   },
@@ -94,7 +94,7 @@ export const products: Product[] = [
       gsm: "200 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-4.jpeg",
+    image: "/plate-4.jpeg",
     featured: true,
     available: true
   },
@@ -114,7 +114,7 @@ export const products: Product[] = [
       gsm: "200 GSM",
       materials: "Kraft & Chipboard"
     },
-    image: "/src/assets/plate-5.jpeg",
+    image: "/plate-5.jpeg",
     featured: true,
     available: true
   },
@@ -134,7 +134,7 @@ export const products: Product[] = [
       gsm: "80 GSM",
       colour: "Green"
     },
-    image: "/src/assets/plate-6.jpeg",
+    image: "/plate-6.jpeg",
     featured: true,
     available: true
   },
@@ -154,7 +154,27 @@ export const products: Product[] = [
       application: "Colour Plate",
       finish: "Available in colour options"
     },
-    image: "/src/assets/plate-7.jpeg",
+    image: "/plate-7.jpeg",
+    featured: true,
+    available: true
+  },
+  {
+    id: "p8",
+    slug: "duplex-board",
+    name: "Duplex Board",
+    tagline: "Premium Board for Quality Plate Production",
+    description: "Duplex board is a high-quality two-layered paperboard material used in paper plate manufacturing. Its coated white top surface combined with a grey inner layer provides excellent printability, rigidity, and a clean finish — making it ideal for premium disposable plate applications.",
+    suitableFor: [
+      "Premium disposable paper plates",
+      "Printable plate surfaces",
+      "High-rigidity plate requirements",
+      "Commercial and event catering"
+    ],
+    specs: {
+      finish: "Coated White / Grey Back",
+      materials: "Duplex Board"
+    },
+    image: "/duplex.jpeg",
     featured: true,
     available: true
   }

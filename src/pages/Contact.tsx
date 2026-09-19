@@ -41,7 +41,7 @@ export function Contact() {
       <div className="container mx-auto px-4 md:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal mb-6">
+          <h2 className="text-3xl md:text-4xl font-heading font-medium text-brand-charcoal mb-6">
             Let's Talk About Your Requirement
           </h2>
           <p className="text-lg text-gray-600">
@@ -53,7 +53,7 @@ export function Contact() {
           
           {/* Form Side */}
           <div className="w-full lg:w-2/3 p-8 md:p-12">
-            <h3 className="text-2xl font-heading font-bold text-brand-charcoal mb-8 border-b border-gray-100 pb-4">
+            <h3 className="text-2xl font-heading font-medium text-brand-charcoal mb-8 border-b border-gray-100 pb-4">
               Send Enquiry
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -122,7 +122,7 @@ export function Contact() {
 
           {/* Info Side */}
           <div className="w-full lg:w-1/3 bg-brand-charcoal text-white p-8 md:p-12 flex flex-col justify-center">
-            <h3 className="text-2xl font-heading font-bold mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-heading font-medium mb-8">Contact Information</h3>
             
             <div className="space-y-8">
               <div className="flex items-start">

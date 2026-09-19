@@ -38,7 +38,7 @@ export function WhyDia() {
     <section id="why-dia" className="bg-white py-12 md:py-20 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold text-brand-charcoal mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-medium text-brand-charcoal mb-4">
             Why Choose DIA Enterprises?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ export function WhyDia() {
               <div className="bg-brand-green/10 p-4 rounded-lg mb-6">
                 {benefit.icon}
               </div>
-              <h3 className="text-xl font-heading font-bold text-brand-charcoal mb-3">
+              <h3 className="text-xl font-heading font-medium text-brand-charcoal mb-3">
                 <span className="text-brand-green-light mr-2 text-sm font-mono">0{index + 1} —</span>
                 {benefit.title}
               </h3>

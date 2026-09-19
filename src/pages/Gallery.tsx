@@ -14,7 +14,7 @@ export function Gallery() {
     <section id="gallery" className="bg-white py-12 md:py-20 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold text-brand-charcoal mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-medium text-brand-charcoal mb-4">
             Product Gallery
           </h2>
           <p className="text-lg text-gray-600">
