@@ -13,6 +13,7 @@ export interface Product {
     application?: string;
   };
   image: string;
+  altText: string;
   featured: boolean;
   available: boolean;
 }
@@ -34,7 +35,8 @@ export const products: Product[] = [
       gsm: "80 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-1.jpeg",
+    image: "/src/assets/80-gsm-silver-paper-plate-raw-material.jpeg",
+    altText: "80 GSM silver paper for paper plate manufacturing",
     featured: true,
     available: true
   },
@@ -54,7 +56,8 @@ export const products: Product[] = [
       gsm: "120 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-2.jpeg",
+    image: "/src/assets/120-gsm-silver-paper-plate-raw-material.jpeg",
+    altText: "120 GSM silver paper raw material for paper plates",
     featured: true,
     available: true
   },
@@ -74,7 +77,8 @@ export const products: Product[] = [
       gsm: "180 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-3.jpeg",
+    image: "/src/assets/180-gsm-silver-paper-plate-raw-material.jpeg",
+    altText: "180 GSM silver paper for strong paper plate manufacturing",
     featured: true,
     available: true
   },
@@ -94,7 +98,8 @@ export const products: Product[] = [
       gsm: "200 GSM",
       finish: "Silver"
     },
-    image: "/src/assets/plate-4.jpeg",
+    image: "/src/assets/200-gsm-silver-paper-plate-raw-material.jpeg",
+    altText: "200 GSM heavy duty silver paper for paper plate manufacturing",
     featured: true,
     available: true
   },
@@ -114,7 +119,8 @@ export const products: Product[] = [
       gsm: "200 GSM",
       materials: "Kraft & Chipboard"
     },
-    image: "/src/assets/plate-5.jpeg",
+    image: "/src/assets/200-gsm-kraft-chipboard-paper-plate-raw-material.jpeg",
+    altText: "200 GSM kraft paper and chipboard for paper plate manufacturing",
     featured: true,
     available: true
   },
@@ -134,7 +140,8 @@ export const products: Product[] = [
       gsm: "80 GSM",
       colour: "Green"
     },
-    image: "/src/assets/plate-6.jpeg",
+    image: "/src/assets/80-gsm-thali-green-sheet-paper-plate-raw-material.jpeg",
+    altText: "80 GSM thali green sheet for traditional paper plates",
     featured: true,
     available: true
   },
@@ -154,7 +161,8 @@ export const products: Product[] = [
       application: "Colour Plate",
       finish: "Available in colour options"
     },
-    image: "/src/assets/plate-7.jpeg",
+    image: "/src/assets/saree-box-colour-paper-plate-raw-material.jpeg",
+    altText: "colour plate raw material for decorative paper plate manufacturing",
     featured: true,
     available: true
   }

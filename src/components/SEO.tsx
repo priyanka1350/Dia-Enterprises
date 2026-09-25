@@ -7,10 +7,11 @@ interface SEOProps {
   canonical?: string;
   type?: 'website' | 'article' | 'product';
   image?: string;
+  exactTitle?: boolean;
 }
 
-export function SEO({ title, description, canonical, type = 'website', image }: SEOProps) {
-  const siteTitle = title ? `${title} | ${company.name}` : `${company.name} | ${company.tagline}`;
+export function SEO({ title, description, canonical, type = 'website', image, exactTitle }: SEOProps) {
+  const siteTitle = (exactTitle && title) ? title : (title ? `${title} | ${company.name}` : `${company.name} | ${company.tagline}`);
   const metaDescription = description || company.description;
   const url = canonical ? `${company.website}${canonical}` : company.website;
   const ogImage = image || `${company.website}/og-image.jpg`;
@@ -40,14 +41,32 @@ export function SEO({ title, description, canonical, type = 'website', image }: 
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "LocalBusiness",
           "name": company.name,
           "url": company.website,
           "logo": `${company.website}/logo.png`,
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": company.phone,
-            "contactType": "customer service"
+          "image": `${company.website}/logo.png`,
+          "telephone": company.phone,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": company.address.street,
+            "addressLocality": company.address.city,
+            "addressRegion": company.address.state,
+            "postalCode": company.address.pincode,
+            "addressCountry": company.address.country
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
           }
         })}
       </script>

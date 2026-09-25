@@ -35,7 +35,7 @@ export function ProductDetails() {
               <div className="w-full md:w-1/2 relative bg-brand-beige/20">
                 <img 
                   src={product.image} 
-                  alt={product.name} 
+                  alt={product.altText || product.name} 
                   className="w-full h-full object-cover object-center aspect-square md:aspect-auto md:absolute inset-0"
                 />
               </div>

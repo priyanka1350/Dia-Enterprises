@@ -6,7 +6,7 @@ export const company = {
   whatsapp: "[WHATSAPP NUMBER]",
   whatsappLink: "https://wa.me/1234567890", // Replace with real link when number is provided
   email: "diaent@gmail.com",
-  website: "https://diaenterprises.com",
+  website: "https://diaenterprisesindia.com",
   address: {
     street: "[Street Address]",
     city: "[City]",

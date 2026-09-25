@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://diaenterprises.com/sitemap.xml
+Sitemap: https://diaenterprisesindia.com/sitemap.xml

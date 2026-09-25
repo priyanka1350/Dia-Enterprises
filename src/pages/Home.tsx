@@ -1,6 +1,5 @@
 import { ArrowRight, Layers, Box, PackageSearch, Truck } from 'lucide-react';
 import { SEO } from '../components/SEO';
-import { company } from '../data/company';
 import { motion } from 'framer-motion';
 
 // Import all sections
@@ -9,8 +8,6 @@ import { Products } from './Products';
 import { GSMExplainer } from './GSMExplainer';
 import { WhyDia } from './WhyDia';
 import { Applications } from './Applications';
-import { SupplyProcess } from './SupplyProcess';
-import { Comparison } from './Comparison';
 import { Gallery } from './Gallery';
 import { FAQ } from './FAQ';
 import { Contact } from './Contact';
@@ -19,8 +16,9 @@ export function Home() {
   return (
     <>
       <SEO 
-        title="Paper Plate Raw Material Manufacturer & Supplier" 
-        description={company.description}
+        title="Dia Enterprise | Paper Plate Raw Material & Paper Plate Supplier India" 
+        description="Dia Enterprise supplies paper plates and paper plate raw materials across India, including silver paper, kraft paper and chipboard for paper plate manufacturing."
+        exactTitle={true}
       />
 
       {/* Hero Section */}
@@ -41,12 +39,12 @@ export function Home() {
                 Premium Paper Plates Manufacturer
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-semibold leading-tight mb-6 text-brand-charcoal">
-                High-Quality Paper Plates for Every Occasion
+                Paper Plate & Raw Material Supplier in India
               </h1>
               <p className="text-lg md:text-xl mb-10 leading-relaxed text-gray-700">
-                From lightweight everyday plates to heavy-duty catering supplies, DIA Enterprises provides a comprehensive range of premium paper plates. 
+                Dia Enterprise supplies paper plates and paper plate raw materials across India. From our comprehensive range, we provide high-quality silver paper, kraft paper and chipboard specifically for paper plate manufacturing.
                 <br className="hidden md:block" /><br className="hidden md:block" />
-                Whether you need elegant silver-coated plates, sturdy Kraft options, or traditional Thali designs, we deliver quality you can trust.
+                Whether you need lightweight raw materials for everyday food-serving applications or heavy-duty materials for sturdy plate production, we deliver the right materials for your needs.
               </p>
               
               <div className="flex flex-wrap items-center justify-start gap-4">

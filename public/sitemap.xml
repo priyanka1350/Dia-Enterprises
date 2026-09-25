@@ -1,38 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://diaenterprise.com/</loc>
+    <loc>https://diaenterprisesindia.com/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
-  <!-- Dynamic Product Routes will be added here or generated dynamically -->
   <url>
-    <loc>https://diaenterprise.com/products/9-inch-round-paper-plate</loc>
+    <loc>https://diaenterprisesindia.com/paper-plate-raw-materials</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/silver-paper</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/kraft-paper</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/chipboard</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/paper-plates</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/products/80-gsm-silver</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://diaenterprise.com/products/12-inch-compartment-plate</loc>
+    <loc>https://diaenterprisesindia.com/products/120-gsm-silver</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://diaenterprise.com/products/7-inch-square-snack-plate</loc>
+    <loc>https://diaenterprisesindia.com/products/180-gsm-silver</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://diaenterprise.com/products/silver-foil-buffet-plate</loc>
+    <loc>https://diaenterprisesindia.com/products/200-gsm-silver</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://diaenterprise.com/products/printed-party-plates</loc>
+    <loc>https://diaenterprisesindia.com/products/200-gsm-kraft-chipboard</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://diaenterprise.com/products/6-inch-cake-plate</loc>
+    <loc>https://diaenterprisesindia.com/products/80-gsm-thali-green-sheet</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://diaenterprisesindia.com/products/saree-box-colour-plate</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>

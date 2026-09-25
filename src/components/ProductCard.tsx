@@ -12,7 +12,7 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="aspect-[4/3] bg-brand-beige/30 overflow-hidden relative">
         <img
           src={product.image}
-          alt={product.name}
+          alt={product.altText || product.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />

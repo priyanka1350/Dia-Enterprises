@@ -6,37 +6,53 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: "What type of paper plate raw materials does DIA Enterprises offer?",
-      answer: "DIA Enterprises offers a range of paper plate raw materials including silver paper, Kraft, chipboard, Thali green sheets and plates, and colour plate materials."
+      question: "What raw materials are used for making paper plates?",
+      answer: "Paper plates are typically manufactured using raw materials like silver paper, kraft paper, chipboard, and various grades of coated paper, ranging from 80 GSM to 200 GSM depending on the required strength."
     },
     {
-      question: "What GSM options are available?",
-      answer: "Our range includes 80 GSM, 120 GSM, 180 GSM, and 200 GSM materials across different product categories."
+      question: "Does Dia Enterprise supply paper plate raw materials in India?",
+      answer: "Yes, Dia Enterprise supplies a wide range of paper plate raw materials across India, including silver paper, kraft paper, chipboard, and thali green sheets."
     },
     {
-      question: "Do you provide silver paper?",
-      answer: "Yes. DIA Enterprises offers silver paper in 80 GSM, 120 GSM, 180 GSM, and 200 GSM options."
+      question: "Does Dia Enterprise supply silver paper for paper plate manufacturing?",
+      answer: "Yes, we supply silver paper for paper plate manufacturing. It is available in various thicknesses, including 80 GSM, 120 GSM, 180 GSM, and 200 GSM."
     },
     {
-      question: "Do you provide Kraft and chipboard?",
-      answer: "Yes. 200 GSM Kraft and chipboard are part of our paper plate raw-material range."
+      question: "Does Dia Enterprise supply kraft paper for paper plates?",
+      answer: "Yes, we supply 200 GSM kraft paper which provides a sturdy and rigid base for manufacturing heavy-duty paper plates."
     },
     {
-      question: "Do you provide green sheets for Thali plates?",
-      answer: "Yes. DIA Enterprises offers 80 GSM Thali green sheets and plate materials."
+      question: "Does Dia Enterprise supply chipboard for paper plate manufacturing?",
+      answer: "Yes, Dia Enterprise offers 200 GSM chipboard, suitable for manufacturers looking for increased structural strength and durability in their paper plates."
     },
     {
-      question: "Do you supply colour plate materials?",
-      answer: "Yes. We offer colour plate materials suitable for decorative and specialty paper plate applications."
+      question: "Can I purchase paper plate raw materials in bulk?",
+      answer: "Yes, bulk supply of all our paper plate raw materials is available. You can contact Dia Enterprise to discuss your specific volume requirements."
     },
     {
-      question: "Can I enquire about bulk quantities?",
-      answer: "Yes. Contact DIA Enterprises with your required material, GSM, and quantity to discuss your requirement."
+      question: "Where does Dia Enterprise supply paper plate raw materials?",
+      answer: "Dia Enterprise supplies paper plate raw materials to customers, businesses, and manufacturers all across India."
     }
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section id="faq" className="bg-white py-12 md:py-20 scroll-mt-20">
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-semibold text-brand-charcoal mb-4">
