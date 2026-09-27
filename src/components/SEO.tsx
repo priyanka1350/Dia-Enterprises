@@ -8,9 +8,11 @@ interface SEOProps {
   type?: 'website' | 'article' | 'product';
   image?: string;
   exactTitle?: boolean;
+  productName?: string;
+  productDescription?: string;
 }
 
-export function SEO({ title, description, canonical, type = 'website', image, exactTitle }: SEOProps) {
+export function SEO({ title, description, canonical, type = 'website', image, exactTitle, productName, productDescription }: SEOProps) {
   const siteTitle = (exactTitle && title) ? title : (title ? `${title} | ${company.name}` : `${company.name} | ${company.tagline}`);
   const metaDescription = description || company.description;
   const url = canonical ? `${company.website}${canonical}` : company.website;
@@ -70,19 +72,7 @@ export function SEO({ title, description, canonical, type = 'website', image, ex
       }
     : null;
 
-  // WebSite schema with SearchAction
-  const websiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: company.name,
-    url: company.website,
-    description: company.description,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${company.website}/?s={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
-  };
+
 
   return (
     <Helmet>
@@ -90,7 +80,7 @@ export function SEO({ title, description, canonical, type = 'website', image, ex
       <html lang="en" />
       <title>{siteTitle}</title>
       <meta name="description" content={metaDescription} />
-      <meta name="keywords" content={company.keywords} />
+      <meta name="keywords" content="Paper Plates, Raw Materials, Dia Enterprises" />
       <meta name="author" content={company.name} />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />

@@ -19,7 +19,7 @@ export function Footer() {
               className="h-14 w-auto object-contain mb-3"
             />
             <p className="text-brand-charcoal font-medium text-sm leading-relaxed">
-              {company.shortDescription}
+              {company.tagline}
             </p>
           </div>
 
