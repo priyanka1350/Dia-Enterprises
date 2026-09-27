@@ -55,7 +55,7 @@ export function FAQ() {
       </script>
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold text-brand-charcoal mb-4">
+          <h2 className="text-3xl md:text-4xl font-heading font-medium text-brand-charcoal mb-4">
             Frequently Asked Questions
           </h2>
         </div>
@@ -70,7 +70,7 @@ export function FAQ() {
                 className="w-full flex justify-between items-center p-6 text-left"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <h3 className={`text-lg font-heading font-semibold pr-8 ${openIndex === index ? 'text-brand-green' : 'text-brand-charcoal'}`}>
+                <h3 className={`text-lg font-heading font-medium pr-8 ${openIndex === index ? 'text-brand-green' : 'text-brand-charcoal'}`}>
                   {faq.question}
                 </h3>
                 {openIndex === index ? (

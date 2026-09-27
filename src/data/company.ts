@@ -8,13 +8,13 @@ export const company = {
   email: "diaent@gmail.com",
   website: "https://diaenterprisesindia.com",
   address: {
-    street: "[Street Address]",
-    city: "[City]",
-    state: "[State]",
-    pincode: "[Pincode]",
+    street: "1st Division, Main Road, Bommonakatte",
+    city: "Bhadravathi",
+    state: "Karnataka",
+    pincode: "577302",
     country: "India"
   },
-  foundingYear: "2020", // Placeholder
+  foundingYear: "2020",
   founder: "[Founder Name]",
   productionCapacity: "[e.g., 50 Tons/Month]",
   businessHours: "Monday - Saturday, 9:00 AM - 6:00 PM"
